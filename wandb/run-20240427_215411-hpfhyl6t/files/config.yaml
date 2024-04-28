@@ -1,0 +1,64 @@
+wandb_version: 1
+
+name:
+  desc: null
+  value: initial-run
+batch_size:
+  desc: null
+  value: 4096
+initial_lr:
+  desc: null
+  value: 0.0005
+final_lr:
+  desc: null
+  value: 5.0e-05
+num_iter:
+  desc: null
+  value: 100000
+tn:
+  desc: null
+  value: 0
+tf:
+  desc: null
+  value: 1
+Nc:
+  desc: null
+  value: 64
+Nf:
+  desc: null
+  value: 128
+Lx:
+  desc: null
+  value: 10
+Ld:
+  desc: null
+  value: 4
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.2
+    cli_version: 0.16.6
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: true
+    start_time: 1714280051.0
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.12.2
+      5: 0.16.6
+      8:
+      - 1
+      - 2
+      - 5
+      13: darwin-x86_64

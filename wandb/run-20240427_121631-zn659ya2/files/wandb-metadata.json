@@ -1,0 +1,44 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-04-27T19:16:32.284171",
+    "startedAt": "2024-04-27T19:16:31.301939",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "nerf.ipynb",
+    "codePathLocal": "nerf.ipynb",
+    "git": {
+        "remote": "https://github.com/jokoro/nerf.git",
+        "commit": "b3ff954f6178cc17feebff7e2025b3a05bd3e808"
+    },
+    "email": "jay.okoro@gmail.com",
+    "root": "/Users/jasonokoro/Desktop/proyectos/nerf",
+    "host": "Jasons-MacBook-Pro-89.local",
+    "username": "jasonokoro",
+    "executable": "/Users/jasonokoro/miniconda3/envs/nerf-env/bin/python",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 1600,
+        "min": 1600,
+        "max": 1600
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1600,
+            "min": 1600,
+            "max": 1600
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 465.62699127197266,
+            "used": 361.6310119628906
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

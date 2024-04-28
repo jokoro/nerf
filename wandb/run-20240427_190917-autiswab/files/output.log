@@ -1,0 +1,24 @@
+epochs:   0%|          | 0/8256 [00:00<?, ?it/s]
+
+batches:   0%|          | 0/49612 [00:00<?, ?it/s]
+epochs:   0%|          | 0/8256 [00:00<?, ?it/s]
+
+batches:   0%|          | 0/49612 [00:00<?, ?it/s]
+epochs:   0%|          | 0/8256 [00:00<?, ?it/s]
+
+batches:   0%|          | 0/49612 [00:00<?, ?it/s]
+5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d6.29.35dc3a68c-e34e-4080-9c3e-2a532b2ccb4d
+epochs:   0%|          | 0/8256 [00:00<?, ?it/s]
+Traceback (most recent call last):[00:00<?, ?it/s]
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/tqdm/std.py", line 1196, in __iter__
+    self.close()
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/tqdm/std.py", line 1265, in close
+    def close(self):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_trace_dispatch_regular.py", line 326, in __call__
+    def __call__(self, frame, event, arg):
+KeyboardInterrupt:
+epochs:   0%|          | 0/8256 [06:24<?, ?it/s]
+epochs:   0%|          | 0/8256 [00:00<?, ?it/s]
+
+batches:   0%|          | 0/49612 [00:00<?, ?it/s]
+Model saved to Weights and Biases!

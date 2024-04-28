@@ -1,0 +1,60 @@
+2024-04-27 13:35:40,475 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-27 13:35:40,484 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Configure stats pid to 29373
+2024-04-27 13:35:40,505 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/.config/wandb/settings
+2024-04-27 13:35:40,506 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/Desktop/proyectos/nerf/wandb/settings
+2024-04-27 13:35:40,526 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'notebook_name': 'nerf.ipynb'}
+2024-04-27 13:35:40,528 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-27 13:35:40,548 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-04-27 13:35:40,548 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-04-27 13:35:40,548 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-27 13:35:40,548 INFO    MainThread:29373 [wandb_init.py:_log_setup():521] Logging user logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_133540-59w8akx2/logs/debug.log
+2024-04-27 13:35:40,549 INFO    MainThread:29373 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_133540-59w8akx2/logs/debug-internal.log
+2024-04-27 13:35:40,550 INFO    MainThread:29373 [wandb_init.py:init():561] calling init triggers
+2024-04-27 13:35:40,552 INFO    MainThread:29373 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'name': 'initial-run', 'batch_size': 4096, 'initial_lr': 0.0005, 'final_lr': 5e-05, 'num_iter': 100000, 'tn': 0, 'tf': 1, 'Nc': 64, 'Nf': 128}
+2024-04-27 13:35:40,553 INFO    MainThread:29373 [wandb_init.py:init():586] re-initializing run, found existing run on stack: ag111mqg
+2024-04-27 13:35:40,566 INFO    MainThread:29373 [wandb_run.py:_finish():2064] finishing run jay-okoro/nerf/ag111mqg
+2024-04-27 13:35:40,569 ERROR   MainThread:29373 [jupyter.py:save_history():437] Run pip install nbformat to save notebook history
+2024-04-27 13:35:40,569 INFO    MainThread:29373 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-27 13:35:40,570 INFO    MainThread:29373 [wandb_init.py:_jupyter_teardown():449] cleaning up jupyter logic
+2024-04-27 13:35:40,571 INFO    MainThread:29373 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-04-27 13:35:40,573 INFO    MainThread:29373 [wandb_run.py:_restore():2287] restore
+2024-04-27 13:35:40,578 INFO    MainThread:29373 [wandb_run.py:_restore():2293] restore done
+2024-04-27 13:35:48,502 INFO    MainThread:29373 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-27 13:35:48,505 INFO    MainThread:29373 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-27 13:35:48,548 INFO    MainThread:29373 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-27 13:35:49,184 INFO    MainThread:29373 [wandb_init.py:init():611] starting backend
+2024-04-27 13:35:49,184 INFO    MainThread:29373 [wandb_init.py:init():615] setting up manager
+2024-04-27 13:35:49,193 INFO    MainThread:29373 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-27 13:35:49,212 INFO    MainThread:29373 [wandb_init.py:init():623] backend started and connected
+2024-04-27 13:35:49,244 INFO    MainThread:29373 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-27 13:35:49,245 INFO    MainThread:29373 [wandb_init.py:init():715] updated telemetry
+2024-04-27 13:35:49,363 INFO    MainThread:29373 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-27 13:35:49,927 INFO    MainThread:29373 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-27 13:35:50,215 INFO    MainThread:29373 [wandb_run.py:_on_init():2366] got version response 
+2024-04-27 13:35:50,215 INFO    MainThread:29373 [wandb_init.py:init():799] starting run threads in backend
+2024-04-27 13:36:03,063 INFO    MainThread:29373 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-27 13:36:03,064 INFO    MainThread:29373 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-27 13:36:03,065 INFO    MainThread:29373 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-27 13:36:03,066 INFO    MainThread:29373 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-27 13:36:03,070 INFO    MainThread:29373 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-27 13:51:24,579 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-27 13:51:24,580 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Configure stats pid to 29373
+2024-04-27 13:51:24,580 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/.config/wandb/settings
+2024-04-27 13:51:24,580 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/Desktop/proyectos/nerf/wandb/settings
+2024-04-27 13:51:24,580 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'notebook_name': 'nerf.ipynb'}
+2024-04-27 13:51:24,581 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-27 13:51:24,581 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-04-27 13:51:24,581 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-04-27 13:51:24,582 INFO    MainThread:29373 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-27 13:51:24,584 INFO    MainThread:29373 [wandb_init.py:_log_setup():521] Logging user logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_135124-fm620qof/logs/debug.log
+2024-04-27 13:51:24,585 INFO    MainThread:29373 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_135124-fm620qof/logs/debug-internal.log
+2024-04-27 13:51:24,585 INFO    MainThread:29373 [wandb_init.py:_jupyter_setup():467] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x1341139e0>
+2024-04-27 13:51:24,586 INFO    MainThread:29373 [wandb_init.py:init():561] calling init triggers
+2024-04-27 13:51:24,586 INFO    MainThread:29373 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'name': 'initial-run', 'batch_size': 4096, 'initial_lr': 0.0005, 'final_lr': 5e-05, 'num_iter': 100000, 'tn': 0, 'tf': 1, 'Nc': 64, 'Nf': 128}
+2024-04-27 13:51:24,586 INFO    MainThread:29373 [wandb_init.py:init():586] re-initializing run, found existing run on stack: 59w8akx2
+2024-04-27 13:51:24,602 INFO    MainThread:29373 [wandb_run.py:_finish():2064] finishing run jay-okoro/nerf/59w8akx2
+2024-04-27 13:51:24,602 INFO    MainThread:29373 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-04-27 13:51:24,604 INFO    MainThread:29373 [wandb_run.py:_restore():2287] restore
+2024-04-27 13:51:24,610 INFO    MainThread:29373 [wandb_run.py:_restore():2293] restore done

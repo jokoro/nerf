@@ -1,0 +1,269 @@
+2024-04-26 08:46:32,379 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-26 08:46:32,379 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Configure stats pid to 6574
+2024-04-26 08:46:32,380 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/.config/wandb/settings
+2024-04-26 08:46:32,380 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/Desktop/proyectos/nerf/wandb/settings
+2024-04-26 08:46:32,380 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-26 08:46:32,380 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-26 08:46:32,380 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-26 08:46:32,380 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-26 08:46:32,380 INFO    MainThread:6574 [wandb_init.py:_log_setup():521] Logging user logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_084632-m0tnexj4/logs/debug.log
+2024-04-26 08:46:32,381 INFO    MainThread:6574 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_084632-m0tnexj4/logs/debug-internal.log
+2024-04-26 08:46:32,381 INFO    MainThread:6574 [wandb_init.py:init():561] calling init triggers
+2024-04-26 08:46:32,389 INFO    MainThread:6574 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'name': 'initial-run', 'batch_size': 4096, 'initial_lr': 0.0005, 'final_lr': 5e-05, 'num_epochs': 10, 'tn': 0, 'tf': 1, 'Nc': 64, 'Nf': 128}
+2024-04-26 08:46:32,392 INFO    MainThread:6574 [wandb_init.py:init():611] starting backend
+2024-04-26 08:46:32,394 INFO    MainThread:6574 [wandb_init.py:init():615] setting up manager
+2024-04-26 08:46:32,397 INFO    MainThread:6574 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-26 08:46:32,398 INFO    MainThread:6574 [wandb_init.py:init():623] backend started and connected
+2024-04-26 08:46:32,404 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-26 08:46:32,405 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-26 08:46:32,405 INFO    MainThread:6574 [wandb_init.py:init():715] updated telemetry
+2024-04-26 08:46:32,472 INFO    MainThread:6574 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-26 08:46:32,976 INFO    MainThread:6574 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-26 08:46:45,927 WARNING MainThread:6574 [wandb_init.py:init():1203] interrupted
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 797, in init
+    run._on_init()
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2361, in _on_init
+    version_result = version_handle.wait(timeout=30)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-04-26 08:50:08,160 INFO    MainThread:6574 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-04-26 08:50:08,205 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-26 08:50:08,205 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Configure stats pid to 6574
+2024-04-26 08:50:08,205 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/.config/wandb/settings
+2024-04-26 08:50:08,205 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/Desktop/proyectos/nerf/wandb/settings
+2024-04-26 08:50:08,206 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-26 08:50:08,206 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-26 08:50:08,206 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-26 08:50:08,206 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-26 08:50:08,206 INFO    MainThread:6574 [wandb_init.py:_log_setup():521] Logging user logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_085008-cwdtukp5/logs/debug.log
+2024-04-26 08:50:08,207 INFO    MainThread:6574 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_085008-cwdtukp5/logs/debug-internal.log
+2024-04-26 08:50:08,207 INFO    MainThread:6574 [wandb_init.py:init():561] calling init triggers
+2024-04-26 08:50:08,207 INFO    MainThread:6574 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'name': 'initial-run', 'batch_size': 4096, 'initial_lr': 0.0005, 'final_lr': 5e-05, 'num_epochs': 10, 'tn': 0, 'tf': 1, 'Nc': 64, 'Nf': 128}
+2024-04-26 08:50:08,207 INFO    MainThread:6574 [wandb_init.py:init():611] starting backend
+2024-04-26 08:50:08,207 INFO    MainThread:6574 [wandb_init.py:init():615] setting up manager
+2024-04-26 08:50:08,210 INFO    MainThread:6574 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-26 08:50:08,211 INFO    MainThread:6574 [wandb_init.py:init():623] backend started and connected
+2024-04-26 08:50:08,220 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-26 08:50:08,223 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-26 08:50:08,223 INFO    MainThread:6574 [wandb_init.py:init():715] updated telemetry
+2024-04-26 08:50:08,371 INFO    MainThread:6574 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-26 08:51:22,307 WARNING MainThread:6574 [wandb_init.py:init():1203] interrupted
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 751, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-04-26 08:56:58,014 INFO    MainThread:6574 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-04-26 08:56:58,033 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-26 08:56:58,035 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Configure stats pid to 6574
+2024-04-26 08:56:58,035 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/.config/wandb/settings
+2024-04-26 08:56:58,035 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/Desktop/proyectos/nerf/wandb/settings
+2024-04-26 08:56:58,036 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-26 08:56:58,036 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-26 08:56:58,037 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-26 08:56:58,037 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-26 08:56:58,038 INFO    MainThread:6574 [wandb_init.py:_log_setup():521] Logging user logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_085658-x9d0ocwh/logs/debug.log
+2024-04-26 08:56:58,038 INFO    MainThread:6574 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_085658-x9d0ocwh/logs/debug-internal.log
+2024-04-26 08:56:58,040 INFO    MainThread:6574 [wandb_init.py:init():561] calling init triggers
+2024-04-26 08:56:58,041 INFO    MainThread:6574 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'name': 'initial-run', 'batch_size': 4096, 'initial_lr': 0.0005, 'final_lr': 5e-05, 'num_epochs': 10, 'tn': 0, 'tf': 1, 'Nc': 64, 'Nf': 128}
+2024-04-26 08:56:58,041 INFO    MainThread:6574 [wandb_init.py:init():611] starting backend
+2024-04-26 08:56:58,042 INFO    MainThread:6574 [wandb_init.py:init():615] setting up manager
+2024-04-26 08:56:58,045 INFO    MainThread:6574 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-26 08:56:58,046 INFO    MainThread:6574 [wandb_init.py:init():623] backend started and connected
+2024-04-26 08:56:58,056 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-26 08:56:58,056 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-26 08:56:58,057 INFO    MainThread:6574 [wandb_init.py:init():715] updated telemetry
+2024-04-26 08:56:58,150 INFO    MainThread:6574 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-26 08:58:28,507 ERROR   MainThread:6574 [wandb_init.py:init():774] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-04-26 08:58:28,671 ERROR   MainThread:6574 [wandb_init.py:init():1199] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 780, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-04-26 09:53:21,239 WARNING MsgRouterThr:6574 [router.py:message_loop():77] message_loop has been closed
+2024-04-26 10:48:33,081 WARNING MsgRouterThr:6574 [router.py:message_loop():77] message_loop has been closed
+2024-04-27 00:37:34,653 INFO    MainThread:6574 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-04-27 00:37:34,721 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-27 00:37:34,722 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Configure stats pid to 6574
+2024-04-27 00:37:34,722 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/.config/wandb/settings
+2024-04-27 00:37:34,723 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/Desktop/proyectos/nerf/wandb/settings
+2024-04-27 00:37:34,723 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-27 00:37:34,723 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-27 00:37:34,724 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-27 00:37:34,724 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-27 00:37:34,724 INFO    MainThread:6574 [wandb_init.py:_log_setup():521] Logging user logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_003734-pxhs3z0n/logs/debug.log
+2024-04-27 00:37:34,725 INFO    MainThread:6574 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_003734-pxhs3z0n/logs/debug-internal.log
+2024-04-27 00:37:34,725 INFO    MainThread:6574 [wandb_init.py:init():561] calling init triggers
+2024-04-27 00:37:34,725 INFO    MainThread:6574 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'name': 'initial-run', 'batch_size': 4096, 'initial_lr': 0.0005, 'final_lr': 5e-05, 'num_epochs': 10, 'tn': 0, 'tf': 1, 'Nc': 64, 'Nf': 128}
+2024-04-27 00:37:34,725 INFO    MainThread:6574 [wandb_init.py:init():611] starting backend
+2024-04-27 00:37:34,726 INFO    MainThread:6574 [wandb_init.py:init():615] setting up manager
+2024-04-27 00:37:34,728 INFO    MainThread:6574 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-27 00:37:34,729 INFO    MainThread:6574 [wandb_init.py:init():623] backend started and connected
+2024-04-27 00:37:34,736 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-27 00:37:34,737 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-27 00:37:34,738 INFO    MainThread:6574 [wandb_init.py:init():715] updated telemetry
+2024-04-27 00:37:34,822 INFO    MainThread:6574 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-27 00:38:08,090 WARNING MainThread:6574 [wandb_init.py:init():1203] interrupted
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 751, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-04-27 01:18:27,386 INFO    MainThread:6574 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-04-27 01:18:27,419 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-27 01:18:27,419 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Configure stats pid to 6574
+2024-04-27 01:18:27,419 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/.config/wandb/settings
+2024-04-27 01:18:27,420 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/Desktop/proyectos/nerf/wandb/settings
+2024-04-27 01:18:27,420 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-27 01:18:27,421 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-27 01:18:27,421 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-27 01:18:27,421 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-27 01:18:27,424 INFO    MainThread:6574 [wandb_init.py:_log_setup():521] Logging user logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_011827-kjsqctce/logs/debug.log
+2024-04-27 01:18:27,425 INFO    MainThread:6574 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_011827-kjsqctce/logs/debug-internal.log
+2024-04-27 01:18:27,428 INFO    MainThread:6574 [wandb_init.py:init():561] calling init triggers
+2024-04-27 01:18:27,430 INFO    MainThread:6574 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'name': 'initial-run', 'batch_size': 4096, 'initial_lr': 0.0005, 'final_lr': 5e-05, 'num_epochs': 10, 'tn': 0, 'tf': 1, 'Nc': 64, 'Nf': 128}
+2024-04-27 01:18:27,433 INFO    MainThread:6574 [wandb_init.py:init():611] starting backend
+2024-04-27 01:18:27,437 INFO    MainThread:6574 [wandb_init.py:init():615] setting up manager
+2024-04-27 01:18:27,445 INFO    MainThread:6574 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-27 01:18:27,448 INFO    MainThread:6574 [wandb_init.py:init():623] backend started and connected
+2024-04-27 01:18:27,516 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-27 01:18:27,516 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-27 01:18:27,516 INFO    MainThread:6574 [wandb_init.py:init():715] updated telemetry
+2024-04-27 01:18:27,595 INFO    MainThread:6574 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-27 01:18:31,893 WARNING MsgRouterThr:6574 [router.py:message_loop():77] message_loop has been closed
+2024-04-27 01:18:32,130 WARNING MainThread:6574 [wandb_init.py:init():1203] interrupted
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 751, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-04-27 01:21:54,727 INFO    MainThread:6574 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-04-27 01:21:54,747 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-27 01:21:54,748 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Configure stats pid to 6574
+2024-04-27 01:21:54,749 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/.config/wandb/settings
+2024-04-27 01:21:54,749 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from /Users/jasonokoro/Desktop/proyectos/nerf/wandb/settings
+2024-04-27 01:21:54,750 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-27 01:21:54,751 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-27 01:21:54,751 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-27 01:21:54,752 INFO    MainThread:6574 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-27 01:21:54,752 INFO    MainThread:6574 [wandb_init.py:_log_setup():521] Logging user logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_012154-j89ox1sq/logs/debug.log
+2024-04-27 01:21:54,753 INFO    MainThread:6574 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_012154-j89ox1sq/logs/debug-internal.log
+2024-04-27 01:21:54,755 INFO    MainThread:6574 [wandb_init.py:init():561] calling init triggers
+2024-04-27 01:21:54,757 INFO    MainThread:6574 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'name': 'initial-run', 'batch_size': 4096, 'initial_lr': 0.0005, 'final_lr': 5e-05, 'num_epochs': 10, 'tn': 0, 'tf': 1, 'Nc': 64, 'Nf': 128}
+2024-04-27 01:21:54,758 INFO    MainThread:6574 [wandb_init.py:init():611] starting backend
+2024-04-27 01:21:54,759 INFO    MainThread:6574 [wandb_init.py:init():615] setting up manager
+2024-04-27 01:21:54,762 INFO    MainThread:6574 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-27 01:21:54,764 INFO    MainThread:6574 [wandb_init.py:init():623] backend started and connected
+2024-04-27 01:21:54,770 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-27 01:21:54,772 INFO    MainThread:6574 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-27 01:21:54,773 INFO    MainThread:6574 [wandb_init.py:init():715] updated telemetry
+2024-04-27 01:21:54,837 INFO    MainThread:6574 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-27 01:21:59,551 WARNING MainThread:6574 [wandb_init.py:init():1203] interrupted
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 751, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

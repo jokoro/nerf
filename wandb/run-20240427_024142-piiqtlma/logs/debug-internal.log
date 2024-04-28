@@ -1,0 +1,11 @@
+2024-04-27 02:41:42,326 INFO    StreamThr :16017 [internal.py:wandb_internal():86] W&B internal server running at pid: 16017, started at: 2024-04-27 02:41:42.324824
+2024-04-27 02:41:42,328 DEBUG   HandlerThread:16017 [handler.py:handle_request():146] handle_request: status
+2024-04-27 02:41:42,334 INFO    WriterThread:16017 [datastore.py:open_for_write():87] open: /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_024142-piiqtlma/run-piiqtlma.wandb
+2024-04-27 02:41:42,335 DEBUG   SenderThread:16017 [sender.py:send():379] send: header
+2024-04-27 02:41:42,432 DEBUG   SenderThread:16017 [sender.py:send():379] send: run
+2024-04-27 02:41:42,743 INFO    SenderThread:16017 [dir_watcher.py:__init__():211] watching files in: /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240427_024142-piiqtlma/files
+2024-04-27 02:41:42,743 INFO    SenderThread:16017 [sender.py:_start_run_threads():1124] run started: piiqtlma with start time 1714210902.324488
+2024-04-27 02:41:45,993 DEBUG   SystemMonitor:16017 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-27 02:41:45,997 DEBUG   SenderThread:16017 [sender.py:send():379] send: stats
+2024-04-27 02:41:47,003 DEBUG   HandlerThread:16017 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 02:41:47,763 DEBUG   HandlerThread:16017 [handler.py:handle_request():146] handle_request: status_report

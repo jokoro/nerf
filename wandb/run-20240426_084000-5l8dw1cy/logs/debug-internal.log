@@ -1,0 +1,281 @@
+2024-04-26 08:40:07,331 INFO    StreamThr :35327 [internal.py:wandb_internal():86] W&B internal server running at pid: 35327, started at: 2024-04-26 08:40:07.324976
+2024-04-26 08:40:07,335 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status
+2024-04-26 08:40:07,337 INFO    WriterThread:35327 [datastore.py:open_for_write():87] open: /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_084000-5l8dw1cy/run-5l8dw1cy.wandb
+2024-04-26 08:40:07,340 DEBUG   SenderThread:35327 [sender.py:send():379] send: header
+2024-04-26 08:40:07,340 DEBUG   SenderThread:35327 [sender.py:send():379] send: run
+2024-04-26 08:40:07,582 ERROR   SenderThread:35327 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-26 08:40:07,583 ERROR   SenderThread:35327 [internal_api.py:execute():374] {"errors":[{"message":"project not found","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-04-26 08:40:07,589 ERROR   SenderThread:35327 [sender.py:send_run():971] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/sender.py", line 969, in send_run
+    server_run = self._init_run(run, config_value_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/sender.py", line 1014, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+                                            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 2217, in upsert_run
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/util.py", line 968, in check_retry_fn
+    return fallback_retry_fn(e)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/util.py", line 910, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-26 08:40:12,629 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:17,648 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:22,665 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:27,686 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:27,889 INFO    StreamThr :35327 [internal.py:wandb_internal():86] W&B internal server running at pid: 35327, started at: 2024-04-26 08:40:27.888178
+2024-04-26 08:40:27,909 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status
+2024-04-26 08:40:27,919 INFO    WriterThread:35327 [datastore.py:open_for_write():87] open: /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_084027-cx6rbmil/run-cx6rbmil.wandb
+2024-04-26 08:40:27,920 DEBUG   SenderThread:35327 [sender.py:send():379] send: header
+2024-04-26 08:40:28,011 DEBUG   SenderThread:35327 [sender.py:send():379] send: run
+2024-04-26 08:40:28,363 ERROR   SenderThread:35327 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-26 08:40:28,363 ERROR   SenderThread:35327 [internal_api.py:execute():374] {"errors":[{"message":"project not found","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-04-26 08:40:28,363 ERROR   SenderThread:35327 [sender.py:send_run():971] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/sender.py", line 969, in send_run
+    server_run = self._init_run(run, config_value_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/sender.py", line 1014, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+                                            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 2217, in upsert_run
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/util.py", line 968, in check_retry_fn
+    return fallback_retry_fn(e)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/util.py", line 910, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-26 08:40:32,701 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:33,376 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:37,716 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:38,400 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:42,739 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:43,414 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:47,758 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:48,426 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:52,772 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:53,465 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:57,890 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:40:58,494 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:02,904 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:03,531 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:07,961 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:08,548 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:12,982 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:13,568 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:18,088 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:18,612 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:23,156 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:23,637 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:28,178 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:28,662 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:33,196 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:33,696 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:38,214 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:38,753 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:43,235 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:43,807 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:48,258 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:48,850 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:51,407 INFO    StreamThr :35327 [internal.py:wandb_internal():86] W&B internal server running at pid: 35327, started at: 2024-04-26 08:41:51.405786
+2024-04-26 08:41:51,412 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status
+2024-04-26 08:41:51,583 INFO    WriterThread:35327 [datastore.py:open_for_write():87] open: /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_084151-rz42bqb4/run-rz42bqb4.wandb
+2024-04-26 08:41:51,584 DEBUG   SenderThread:35327 [sender.py:send():379] send: header
+2024-04-26 08:41:51,733 DEBUG   SenderThread:35327 [sender.py:send():379] send: run
+2024-04-26 08:41:51,963 ERROR   SenderThread:35327 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-26 08:41:51,964 ERROR   SenderThread:35327 [internal_api.py:execute():374] {"errors":[{"message":"project not found","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-04-26 08:41:51,964 ERROR   SenderThread:35327 [sender.py:send_run():971] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/sender.py", line 969, in send_run
+    server_run = self._init_run(run, config_value_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/sender.py", line 1014, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+                                            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 2217, in upsert_run
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/util.py", line 968, in check_retry_fn
+    return fallback_retry_fn(e)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/util.py", line 910, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-26 08:41:53,273 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:53,865 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:56,749 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-26 08:41:56,979 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:58,293 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:41:58,879 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:01,766 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-26 08:42:01,997 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:03,307 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:03,908 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:07,016 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:08,321 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:08,717 INFO    StreamThr :35327 [internal.py:wandb_internal():86] W&B internal server running at pid: 35327, started at: 2024-04-26 08:42:08.716569
+2024-04-26 08:42:08,720 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status
+2024-04-26 08:42:08,742 INFO    WriterThread:35327 [datastore.py:open_for_write():87] open: /Users/jasonokoro/Desktop/proyectos/nerf/wandb/run-20240426_084208-3aswvqd2/run-3aswvqd2.wandb
+2024-04-26 08:42:08,744 DEBUG   SenderThread:35327 [sender.py:send():379] send: header
+2024-04-26 08:42:08,829 DEBUG   SenderThread:35327 [sender.py:send():379] send: run
+2024-04-26 08:42:08,937 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:09,198 ERROR   SenderThread:35327 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-26 08:42:09,199 ERROR   SenderThread:35327 [internal_api.py:execute():374] {"errors":[{"message":"project not found","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-04-26 08:42:09,199 ERROR   SenderThread:35327 [sender.py:send_run():971] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/sender.py", line 969, in send_run
+    server_run = self._init_run(run, config_value_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/sender.py", line 1014, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+                                            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 2217, in upsert_run
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/util.py", line 968, in check_retry_fn
+    return fallback_retry_fn(e)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jasonokoro/miniconda3/envs/nerf-env/lib/python3.12/site-packages/wandb/util.py", line 910, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-26 08:42:12,039 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:13,331 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:13,954 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:14,219 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:17,058 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:18,353 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:18,971 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
+2024-04-26 08:42:19,253 DEBUG   HandlerThread:35327 [handler.py:handle_request():146] handle_request: status_report
