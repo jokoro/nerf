@@ -137,3 +137,4 @@ config: {'name': 'initial-run', 'batch_size': 4096, 'initial_lr': 0.0005, 'final
 2024-04-27 02:22:08,358 INFO    MainThread:96111 [wandb_init.py:_resume_backend():437] resuming backend
 2024-04-27 02:22:08,388 INFO    MainThread:96111 [jupyter.py:save_ipynb():373] not saving jupyter notebook
 2024-04-27 02:22:08,388 INFO    MainThread:96111 [wandb_init.py:_pause_backend():432] pausing backend
+2024-04-30 17:57:40,543 WARNING MsgRouterThr:96111 [router.py:message_loop():77] message_loop has been closed
